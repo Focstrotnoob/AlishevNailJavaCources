@@ -13,6 +13,11 @@ public class Task2 {
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(1000);
         }
+        for (int x : array){
+            System.out.print(x + " ");
+        }
+
+        System.out.println();
 
         for (int x : array) {
             if (x > max) {
@@ -21,7 +26,7 @@ public class Task2 {
             if (x < min) {
                 min = x;
             }
-            if ((x % 10 == 0) && (x != 0)) {
+            if (x % 10 == 0) {
                 multipleOfTen++;
                 sum += x;
             }

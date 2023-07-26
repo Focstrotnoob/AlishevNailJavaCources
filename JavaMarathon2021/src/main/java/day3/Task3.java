@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        boolean stop = false;
 
         for (int i = 0; i < 5; i++) {
             double x = scanner.nextDouble();

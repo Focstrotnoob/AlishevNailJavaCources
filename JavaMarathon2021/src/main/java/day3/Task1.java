@@ -5,42 +5,40 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String resultCountry;
 
-        String stopWord = "Stop";
-        boolean stopProgram = false;
-
-        while (!stopProgram){
+        while (true) {
             String city = scanner.next();
-            if (!city.equals(stopWord)) {
-                switch (city){
-                    case "Москва":
-                    case "Владивосток":
-                    case "Ростов":
-                        System.out.println("Россия");
-                        break;
-                    case "Рим":
-                    case "Турин":
-                    case "Милан":
-                        System.out.println("Италия");
-                        break;
-                    case "Кёльн":
-                    case "Мюнхен":
-                    case "Берлин":
-                        System.out.println("Германия");
-                        break;
-                    case "Лондон":
-                    case "Манчестер":
-                    case "Ливерпуль":
-                        System.out.println("Англия");
-                        break;
-
-                    default:
-                        System.out.println("Неизвестная страна");
-
-                }
-            } else {
-                stopProgram = true;
+            if (city.equalsIgnoreCase("stop")) {
+                break;
             }
+            switch (city) {
+                case "Москва":
+                case "Владивосток":
+                case "Ростов":
+                    resultCountry = "Россия";
+                    break;
+                case "Рим":
+                case "Турин":
+                case "Милан":
+                    resultCountry = "Италия";
+                    break;
+                case "Кёльн":
+                case "Мюнхен":
+                case "Берлин":
+                    resultCountry = "Германия";
+                    break;
+                case "Лондон":
+                case "Манчестер":
+                case "Ливерпуль":
+                    resultCountry = "Англия";
+                    break;
+
+                default:
+                    resultCountry = "Неизвестная страна";
+
+            }
+            System.out.println(resultCountry);
         }
     }
 }

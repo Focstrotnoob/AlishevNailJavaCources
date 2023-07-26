@@ -24,7 +24,7 @@ public class Task1 {
             if (x % 2 == 0){
                 even++;
             }
-            if (x % 2 != 0) {
+            else {
                 odd++;
             }
             if (x == 1) {

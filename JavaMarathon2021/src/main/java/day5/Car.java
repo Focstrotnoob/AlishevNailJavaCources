@@ -27,8 +27,6 @@ public class Car {
     }
 
     public void setYear(int year) {
-        if (year > 1767) {
-            this.year = year;
-        } else System.out.println("Первый автомобиль появился в 1768 году");
+        this.year = year;
     }
 }

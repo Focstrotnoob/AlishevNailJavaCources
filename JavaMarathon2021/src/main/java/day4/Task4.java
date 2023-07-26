@@ -16,10 +16,9 @@ public class Task4 {
         }
         for (int i = 1; i < array.length - 1; i++) {
             tmpSum = 0;
-            tmpSum =  array[i] + array[i - 1] + array[i + 1];
+            tmpSum = array[i] + array[i - 1] + array[i + 1];
 
-
-            if (sum < tmpSum){
+            if (sum < tmpSum) {
                 sum = tmpSum;
                 index = i;
             }

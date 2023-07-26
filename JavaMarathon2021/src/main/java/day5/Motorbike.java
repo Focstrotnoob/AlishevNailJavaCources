@@ -32,8 +32,7 @@ public class Motorbike {
     }
 
     public void setYear(int year) {
-        if (year > 1884) {
-            this.year = year;
-        } else System.out.println("Первый мотоцикл появился в 1885 году");
+        this.year = year;
+
     }
 }
