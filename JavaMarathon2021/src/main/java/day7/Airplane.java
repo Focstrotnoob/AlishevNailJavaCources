@@ -18,6 +18,8 @@ public class Airplane {
     public static void compareAirplanes(Airplane airplane1, Airplane airplane2){
         if (airplane1.length > airplane2.length){
             System.out.println(airplane1.manufacturer + " длинее " + airplane2.manufacturer);
+        } else if (airplane1.length == airplane2.length) {
+            System.out.println("Длина самолетов равна");
         } else System.out.println(airplane2.manufacturer + " длинее " + airplane1.manufacturer);
     }
 

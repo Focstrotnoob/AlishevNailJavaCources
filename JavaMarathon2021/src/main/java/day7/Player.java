@@ -10,7 +10,7 @@ public class Player {
 
     public Player(int stamina) {
         this.stamina = stamina;
-        if(countPlayers < 6) {
+        if(countPlayers < MAX_PLAYERS) {
             countPlayers += 1;
         }
 
